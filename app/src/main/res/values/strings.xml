@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mini Password Manager</string>
+    <string name="setup">Setup</string>
+    <string name="search">Search</string>
+    <string name="exit">Exit</string>
+    <string name="title">Service Title</string>
+    <string name="url">URL</string>
+    <string name="empty"> </string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="notes">Notes</string>
+    <string name="add">Add</string>
+    <string name="tapToView">Tap to View</string>
+    <string name="noNotes">No notes added</string>
+    <string name="im_ex_port">Import/Export</string>
+    <string name="change_pattern">Change Login Pattern</string>
+    <string name="important">Important</string>
+    <string name="disclaimer_label">Disclaimer</string>
+    <string name="disclaimer">The app, nor its creator or anyone associated with it, shall be held responsible for any damage or whatsoever, caused, directly or indirectly, by its usage.</string>
+    <string name="im_ex_port_caution">The same login pattern must be set during the import and export operations, failing which will result in data corruption.</string>
+    <string name="pattern_change_precaution">Please export the stored records as a precautionary measure so that the data can be restored if anything goes wrong when changing the pattern.</string>
+    <string name="update">Update</string>
+    <string name="no_records">No Records</string>
+    <string name="lowercase">Lowercase</string>
+    <string name="uppercase">Uppercase</string>
+    <string name="done">Done</string>
+    <string name="symbols">Symbols</string>
+    <string name="numbers">Numbers</string>
+    <string name="password_length">12</string>
+    <string name="password_size_text">Length</string>
+    <string name="generate_password">Generate</string>
+    <string name="show_password">Show</string>
+    <string name="enter_old_password">Enter old master password</string>
+    <string name="app_update">App update service</string>
+    <string name="stored_passwords">Stored Passwords</string>
+    <string name="about">About</string>
+    <string name="version">v5.0</string>
+    <string name="about_app">Mini Password Manager is a very minimalistic password manager app for android that uses AES-128 encryption algorithm to encrypt all the data stored. The app does not offer multi-platform or synchronization support. All the data are stored locally in encrypted format for which the key is generated based on the login pattern set. It is intended only for personal usage.</string>
+    <string name="support">Support</string>
+    <string name="license">License</string>
+    <string name="contact">For submitting bug reports, suggestions, feedback and queries, please mail the developer at <a href="mailto:karthikmlore@outlook.com">karthikmlore@outlook.com</a></string>
+    <string name="mit_license"><![CDATA[Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.]]></string>
+    <string name="source_code">The source code for the app can be found on GitHub at <a href="https://github.com/karthikmlore/mini-password-manager">https://github.com/karthikmlore/Mini-Password-Manager</a></string>
+</resources>

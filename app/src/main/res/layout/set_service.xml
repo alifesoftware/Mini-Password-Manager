@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:id="@+id/set_service_view">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/title" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/set_title"
+            android:singleLine="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/title_hint"
+            android:layout_alignBaseline="@+id/title_hint"
+            android:layout_alignBottom="@+id/title_hint"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/url_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/set_title"
+            android:text="@string/url" />
+
+        <EditText
+            android:id="@+id/set_url"
+            android:inputType="textUri"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/url_hint"
+            android:layout_alignLeft="@+id/set_title"
+            android:singleLine="true"
+            android:layout_alignBaseline="@+id/url_hint"
+            android:layout_alignBottom="@+id/url_hint"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/username_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/set_url"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/set_username"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/username_hint"
+            android:layout_alignLeft="@+id/set_title"
+            android:singleLine="true"
+            android:layout_alignBaseline="@+id/username_hint"
+            android:layout_alignBottom="@+id/username_hint"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/password_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/set_username"
+            android:text="@string/password" />
+
+
+        <EditText
+            android:id="@+id/set_password"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/password_hint"
+            android:layout_alignLeft="@+id/set_title"
+            android:layout_alignBaseline="@+id/password_hint"
+            android:layout_alignBottom="@+id/password_hint"
+            android:layout_alignParentRight="true"
+            android:inputType="textPassword" />
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_password"
+            android:layout_alignLeft="@id/set_password"
+            android:layout_alignRight="@id/set_password"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/generate_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/brand"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:text="@string/generate_password" />
+            <Button
+                android:id="@+id/show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/brand"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="@string/show_password"/>
+            </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/notes_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/button_container"
+            android:text="@string/notes" />
+
+        <EditText
+            android:id="@+id/set_notes"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/notes_hint"
+            android:layout_alignLeft="@+id/set_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/notes_hint"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+</ScrollView>

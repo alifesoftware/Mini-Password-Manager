@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="@string/app_name"
+            android:textColor="#333"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appName"
+            android:text="@string/version"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/appDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appVersion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/about_app"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/copyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/copyRight"
+            android:layout_marginTop="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/support"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appSupport"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingRight="12dp"
+            android:linksClickable="true"
+            android:text="@string/contact"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#444"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/License"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appContact"
+            android:layout_marginTop="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/license"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/License"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:paddingRight="12dp"
+            android:linksClickable="true"
+            android:text="@string/mit_license"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#444"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/appSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/appName"
+            android:layout_below="@+id/appLicense"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:paddingRight="12dp"
+            android:linksClickable="true"
+            android:text="@string/source_code"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ServiceList">
+
+    <item android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@mipmap/ic_search_white_24dp"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/im_ex_port"
+        android:title="@string/im_ex_port"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/change_pattern"
+        android:title="@string/change_pattern"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/exit"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+</menu>
