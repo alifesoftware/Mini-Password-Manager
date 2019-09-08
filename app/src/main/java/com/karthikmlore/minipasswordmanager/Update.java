@@ -65,15 +65,16 @@ public class Update extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case 1: {
-                if(resultCode == RESULT_OK) {
+                if (resultCode == RESULT_OK) {
                     new_pattern = new String(data.getCharArrayExtra(LockPatternActivity.EXTRA_PATTERN));
                     new_crypter = new Crypter(new_pattern);
                     copy_records_to_new_db();
                     delete_tables();
                     set_new_pattern();
-                    Toast.makeText(context, "Update complete" , Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Update complete", Toast.LENGTH_SHORT).show();
                     Intent secureActivity = new Intent(context, Login.class);
                     startActivity(secureActivity);
                     finish();

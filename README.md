@@ -8,7 +8,7 @@ Mini Password Manager uses AES-128 bit encryption algorithm to encrypt the data 
 
 Mini Password Manager can be downloaded from Play Store at <a href="https://play.google.com/store/apps/details?id=com.buildacode.tpmfree">https://play.google.com/store/apps/details?id=com.buildacode.tpmfree</a>.
 
-The above source is compatible from Android API Level 19 (KitKat) to Android API Level 28 (Pie).
+The above source is compatible from API Level 22 (Android 5.1 Lollipop) to API Level 29 (Android 10).
 
 <b><u>MIT License Terms</u></b>
 

@@ -3,7 +3,6 @@ package com.karthikmlore.minipasswordmanager;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,16 +34,8 @@ public class ServiceListAdapter extends BaseExpandableListAdapter {
         this.records.clear();
         this.allRecords.clear();
         Collections.sort(records, new RecordsSorter());
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            this.records.addAll(records);
-            this.allRecords.addAll(records);
-        }
-        else {
-            for(Records r: records) {
-                this.records.add(r);
-                this.allRecords.add(r);
-            }
-        }
+        this.records.addAll(records);
+        this.allRecords.addAll(records);
     }
 
     @Override
@@ -145,14 +136,7 @@ public class ServiceListAdapter extends BaseExpandableListAdapter {
         records.clear();
 
         if(query.isEmpty()){
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                records.addAll(allRecords);
-            }
-            else {
-                for (Records r : allRecords) {
-                    records.add(r);
-                }
-            }
+            records.addAll(allRecords);
         }
         else {
             for(Records rec: allRecords){

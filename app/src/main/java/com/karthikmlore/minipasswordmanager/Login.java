@@ -37,30 +37,31 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case 2: {
-				switch (resultCode) {
-					case RESULT_OK:
-						String pattern = new String(data.getCharArrayExtra(LockPatternActivity.EXTRA_PATTERN));
-						Intent secureActivity = new Intent(Login.this, ServiceList.class);
-						Bundle bundle = new Bundle();
-						bundle.putString("Pattern", pattern);
-						secureActivity.putExtras(bundle);
-						startActivity(secureActivity);
-						finish();
-						break;
-					case RESULT_CANCELED:
-						finish();
-						break;
-					case LockPatternActivity.RESULT_FAILED:
-                        Toast.makeText(Login.this, "Incorrect pattern" , Toast.LENGTH_SHORT).show();
+                switch (resultCode) {
+                    case RESULT_OK:
+                        String pattern = new String(data.getCharArrayExtra(LockPatternActivity.EXTRA_PATTERN));
+                        Intent secureActivity = new Intent(Login.this, ServiceList.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("Pattern", pattern);
+                        secureActivity.putExtras(bundle);
+                        startActivity(secureActivity);
+                        finish();
+                        break;
+                    case RESULT_CANCELED:
+                        finish();
+                        break;
+                    case LockPatternActivity.RESULT_FAILED:
+                        Toast.makeText(Login.this, "Incorrect pattern", Toast.LENGTH_SHORT).show();
                         login_screen();
-						break;
-					case LockPatternActivity.RESULT_FORGOT_PATTERN:
-						Toast.makeText(Login.this, "Sorry can't help" , Toast.LENGTH_SHORT).show();
+                        break;
+                    case LockPatternActivity.RESULT_FORGOT_PATTERN:
+                        Toast.makeText(Login.this, "Sorry can't help", Toast.LENGTH_SHORT).show();
                         login_screen();
-						break;
-				}
+                        break;
+                }
             }
         }
     }

@@ -41,6 +41,7 @@ public class NewPattern extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case 1: {
                 if (resultCode == RESULT_OK) {
@@ -50,7 +51,7 @@ public class NewPattern extends AppCompatActivity {
                     try {
                         push_pattern.put("PATTERN", new_crypter.encrypt(new_pattern));
                         database = dbHandler.openDB(true);
-                        if(pattern == null) {
+                        if (pattern == null) {
                             try {
                                 if (database.insertOrThrow("APP_SETTINGS", null, push_pattern) != 1)
                                     Toast.makeText(context, "Error storing new pattern", Toast.LENGTH_SHORT).show();
@@ -62,26 +63,24 @@ public class NewPattern extends AppCompatActivity {
                             } catch (SQLiteException e) {
                                 Toast.makeText(context, "Error writing to database", Toast.LENGTH_SHORT).show();
                             }
-                        }
-                        else {
+                        } else {
                             old_crypter = new Crypter(pattern);
                             try {
-                                if(database.update("APP_SETTINGS", push_pattern, "PATTERN = '" + old_crypter.encrypt(pattern) + "'", null) == 1) {
+                                if (database.update("APP_SETTINGS", push_pattern, "PATTERN = '" + old_crypter.encrypt(pattern) + "'", null) == 1) {
                                     recrypt_records();
                                     Toast.makeText(context, "Pattern changed", Toast.LENGTH_SHORT).show();
                                     move_to_login();
                                 }
-                            } catch(Exception e) {
+                            } catch (Exception e) {
                                 Toast.makeText(context, "Error setting new pattern", Toast.LENGTH_SHORT).show();
                             }
 
                         }
                         dbHandler.closeDB();
                     } catch (Exception e) {
-                        Toast.makeText(context, "Encryption error" , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Encryption error", Toast.LENGTH_SHORT).show();
                     }
-                }
-                else finish();
+                } else finish();
                 break;
             }
 

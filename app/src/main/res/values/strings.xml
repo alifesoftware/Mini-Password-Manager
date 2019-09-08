@@ -35,7 +35,7 @@
     <string name="app_update">App update service</string>
     <string name="stored_passwords">Stored Passwords</string>
     <string name="about">About</string>
-    <string name="version">v5.0</string>
+    <string name="version">v5.1</string>
     <string name="about_app">Mini Password Manager is a very minimalistic password manager app for android that uses AES-128 encryption algorithm to encrypt all the data stored. The app does not offer multi-platform or synchronization support. All the data are stored locally in encrypted format for which the key is generated based on the login pattern set. It is intended only for personal usage.</string>
     <string name="support">Support</string>
     <string name="license">License</string>
